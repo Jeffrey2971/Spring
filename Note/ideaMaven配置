@@ -1,0 +1,16 @@
+# ideaMaven配置
+
+- 下载/usr/local/apache-maven-3.5.2/
+    - settings.xml：配置文件
+        - localRepository标签：配置本地存放仓库，默认为根目录下的.m2文件夹，需要给文件夹添加权限
+        - 配置国内仓库
+            - ```<mirror>
+                  <id>aliyun</id>
+                  <name>aliyun Maven</name>
+                  <mirrorOf>*</mirrorOf>
+                  <url>http://maven.aliyun.com/nexus/content/groups/public/</url>
+              </mirror>```
+        - 
+        
+
+## 

@@ -1,0 +1,55 @@
+## 今日内容
+- JQuery高级
+    - 动画
+        - 三种方式显示和隐藏元素
+            - 默认显示和隐藏方式
+                - show([speed,[easing],[fn]])
+                    - 参数
+                        - speed：动画的速度，三个预定义的值("slow", "normal", "fast")或表示动画时长的毫秒值
+                        - easing：用来指定切换效果，默认为"swing", 可用参数"linear"
+                            - swing：动画执行时效果先慢，中间快，最后又慢
+                            - linear：动画执行时速度为匀速的
+                        - fn：在动画执行时执行的函数，每个函数执行一次
+                - hide([speed,[easing],[fn]])
+                - toggle([speed],[easing],[fn])
+    
+            - 滑动显示和隐藏方式
+                - slideDown([speed],[easing],[fn])
+                - slideUp([speed,[easing],[fn]])
+                - slideToggle([speed],[easing],[fn])
+              
+            - 淡入淡出显示和隐藏方式
+                - fadeIn([speed],[easing],[fn])
+                - fadeOut([speed],[easing],[fn])
+                - fadeToggle([speed,[easing],[fn]])
+    - 遍历
+        - JS的遍历方式
+            - for(初始化值;循环结束条件;步长)
+        - jq的遍历方式
+            - jq对象.each(callback)
+            - $.each(object, [callback])
+            - for..of: jquery3.0版本之后提供的方式
+    - 事件绑定
+        - JQuery标准的绑定方式
+            - jq的对象.事件方法(回调函数);
+        - on绑定时间/off解除绑定
+            - jq对象.on("事件名称", 回调函数)
+            - jq对象.off("事件名称", 回调函数)
+        - 事件的切换
+            - toggle
+                - jq对象.toggle(fn1, fn2)
+                    - 当单机jq对象对应的组件后，会执行fn1，第二次点击会执行fn2...
+                - 注意事项
+                    - 1.9版本 .toggle() 方法删除，JQuery migrate (迁移) 插件可以恢复此功能
+                    - <script src="../../js/jquery-migrate-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+    - 案例
+    - 插件：增强JQuery的功能
+        - 实现插件的方式
+            - $.fn.extend(object)
+                - 增强通过JQuery获取的对象的功能    $("#id")
+            - $.extends(object)
+                - 增强JQuery对象自身的功能   $/JQuery
+                
+## 补充
+- serialize()
+    - 将表单数据序列化为key:value格式
